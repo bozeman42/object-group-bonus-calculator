@@ -88,7 +88,9 @@ function displayTable() {
     $('td').hide();
   }
   if ($('td').is(':hidden')) {
-    $('td').slideDown();
+    $('td').slideDown('slow');
+  } else {
+    $('td').slideUp('slow');
   }
 }
 
