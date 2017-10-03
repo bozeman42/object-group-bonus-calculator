@@ -42,7 +42,7 @@ var tableState = false;
 var Employee = function (employeeIn) {
   this.name = employeeIn.name;
   this.bonusPercentage = bonusCalc(employeeIn);
-  this.totalBonus = Math.round(parseInt(employeeIn.annualSalary) * this.bonusPercentage;
+  this.totalBonus = Math.round(parseInt(employeeIn.annualSalary) * this.bonusPercentage);
   this.totalCompensation = parseInt(employeeIn.annualSalary) + this.totalBonus;
 };
 
